@@ -24,15 +24,15 @@ input:-moz-placeholder {
 
 a {
   font-weight: 500;
-  color: #000000;
+  color: #cf94d9;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #ca53f2;
 }
 
 body {
-  background: #ECF0F1;
+  background: #200e45df;
   background-size: cover;
   background-repeat: no-repeat no-repeat;
   background-position: center center;
@@ -54,12 +54,14 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #491c4d;
+  color: #c291be;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #c464ff;
+  color: #e553f2;
 }
 button:focus,
 button:focus-visible {
@@ -88,6 +90,7 @@ tbody tr:nth-child(odd) {
 .nav {
   display: flex;
   padding: 1em 2em;
+  justify-content: space-between;  
 }
 
 .nav ul {
@@ -100,18 +103,22 @@ tbody tr:nth-child(odd) {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: larger;
+  font-size: 2em;
   font-weight: 900;
+  align-items: center;
+  margin-right: 7em;
 }
 
 .nav-title a {
-  color: #b864c4;
+  color: #d66ae4;
+  text-shadow: 0 0 10px #91479b;
 }
 
 .nav-item {
   display: block;
   margin-left: auto;
   list-style: none;
+  margin-left: 7em;
 }
 
 .nav-link {
@@ -148,6 +155,8 @@ tbody tr:nth-child(odd) {
 
 .todo {
   background-color: #e9cbec;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .inprogress {
@@ -156,6 +165,8 @@ tbody tr:nth-child(odd) {
 
 .done {
   background-color: #732381;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .ticket-card {
@@ -169,7 +180,7 @@ tbody tr:nth-child(odd) {
 }
 
 .container {
-  /* margin: auto; */
+  margin: auto;
   width: 100%;
   /* height: 90%; */
 }
@@ -177,6 +188,7 @@ tbody tr:nth-child(odd) {
 #create-ticket-link {
   display: block;
   margin-left: auto;
+  margin-right: 1.8em;
 }
 
 
@@ -189,10 +201,18 @@ tbody tr:nth-child(odd) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 30px;
+  padding: 2em;
+}
+
+.form > h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
 }
 
 .form > h1, .form > label {
   color: yellow;
+  
 }
 
 .form > input {
@@ -216,7 +236,7 @@ tbody tr:nth-child(odd) {
 }
 
 .editBtn {
-  background-color: #f9f9f9;
+  background-color: #5a1d66;
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -225,14 +245,15 @@ tbody tr:nth-child(odd) {
 }
 
 .deleteBtn {
-  background-color: #f9f9f9;
+  background-color: #5a1d66;
   font-weight: 500;
-  color: black;
+  color: rgb(217, 147, 216);
   text-decoration: inherit;
 }
 
-.deleteBtn:hover {
-  color: #535bf2;
+
+.sort-btn{
+  margin-bottom: 1em;
 }
 
 .login-notice {
@@ -242,6 +263,13 @@ tbody tr:nth-child(odd) {
   justify-content: center;
 }
 
+.login-notice h1 {
+  color: #d66ae4;
+  text-shadow: 0 0 10px #91479b;
+}
+
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -249,7 +277,7 @@ tbody tr:nth-child(odd) {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #d874ff;
   }
   button {
     background-color: #f9f9f9;
